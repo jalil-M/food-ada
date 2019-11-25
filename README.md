@@ -1,4 +1,4 @@
-# Food Analytica : John Doe vs The food industry
+# Food Analytica :Social status vs Healthiness
 
 # Abstract
 Each one of us has a nutrition routine, favourite foods, preferred drinks, ingredients of choice, beloved seasonning, etc. These preferences depend on our lifestyle, whether we choose to eat healthy, or follow a diet, or have a guilty pleasure for sweets. But our nutrition is not only based on our choices or preferences of food. Eating healthy is not cheap, most of bio products are more expensive than regular ones. Also, foods labeled as healthy are not always attractive to all social classes. The aim of this study is to evaluate how our social status influences the way we eat, if indicators like age, income or civil status have an impact on our nutrition. Using demographic, purchase as well as food products related data, Infiniteam decided to tackle this question by analysing correlations between households social status and characteristics of their consumed food products.
