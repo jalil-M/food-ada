@@ -4,7 +4,14 @@ function file(name) {
     return '../data/' + name;
 }
 
-// Plots
+function capitalizeFirst(s) {
+    if(s.length > 0)
+        return s[0].toUpperCase() + s.slice(1);
+    else
+        return s;
+}
+
+// === Plots ===
 
 // Map of products by ingredients
 Plotly.d3.csv(file('ply_ingredients_tsne.csv'), (err, rows) => {
@@ -53,13 +60,6 @@ Plotly.d3.csv(file('ply_top_ingredients_lists.csv'), (err, rows) => {
 
     rows = rows.slice(0, 25);
 
-    function capitalizeFirst(s) {
-        if(s.length > 0)
-            return s[0].toUpperCase() + s.slice(1);
-        else
-            return s;
-    }
-
     const data = [{
         x: rows.map(r => r.ingredient).map(capitalizeFirst),
         y: rows.map(r => parseFloat(r.frequency)),
@@ -76,4 +76,33 @@ Plotly.d3.csv(file('ply_top_ingredients_lists.csv'), (err, rows) => {
     };
 
     Plotly.newPlot('top_ingredients', data, layout, plyConfig);
+});
+
+Plotly.d3.text(file('ply_correlation_ingredients.csv'), text => {
+    const rows = Plotly.d3.csv.parseRows(text);
+    const n = rows.length - 1;
+    const header = rows[0].map(capitalizeFirst);
+    const array = rows.slice(1).map(row => row.slice(0, n - 1).map(v => parseFloat(v))).slice(1, n);
+    const data = [{
+        x: header.slice(0, n - 1),
+        y: header.slice(1),
+        z: array,
+        type: 'heatmap'
+    }];
+
+    const layout = {
+        title: {
+            text: 'Highlighting ingredients combinations'
+        },
+        width: 600,
+        height: 600,
+        yaxis: {
+            autorange: 'reversed'
+        },
+        zaxis: {
+            tickformat: ',.1%' // TODO tick doesn't seem to display a percentage!
+        }
+    };
+
+    Plotly.newPlot('correlation_ingredients', data, layout, plyConfig);
 });

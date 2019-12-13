@@ -12,6 +12,8 @@ layout: default
 
 <div id="products_ingredients"></div>
 
+<div id="correlation_ingredients"></div>
+
 # Impact of social status on nutritive health
 
 ```TODO```
