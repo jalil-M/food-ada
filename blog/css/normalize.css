@@ -422,3 +422,7 @@ td,
 th {
   padding: 0;
 }
+
+.js-plotly-plot .plotly div.svg-container {
+  margin: auto;
+}
