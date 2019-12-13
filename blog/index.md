@@ -8,11 +8,13 @@ layout: default
 
 # Healthiness of food
 
-<div id="top_ingredients"></div>
+<div id="top-ingredients"></div>
 
-<div id="products_ingredients"></div>
+<div id="products-ingredients"></div>
 
-<div id="correlation_ingredients"></div>
+<div id="correlation-ingredients"></div>
+
+<div id="correlation-sugars-fat"></div>
 
 # Impact of social status on nutritive health
 

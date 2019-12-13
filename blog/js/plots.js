@@ -52,7 +52,7 @@ Plotly.d3.csv(file('ply_ingredients_tsne.csv'), (err, rows) => {
         yaxis: hiddenAxis
     };
 
-    Plotly.newPlot('products_ingredients', data, layout, plyConfig);
+    Plotly.newPlot('products-ingredients', data, layout, plyConfig);
 });
 
 
@@ -75,7 +75,7 @@ Plotly.d3.csv(file('ply_top_ingredients_lists.csv'), (err, rows) => {
         }
     };
 
-    Plotly.newPlot('top_ingredients', data, layout, plyConfig);
+    Plotly.newPlot('top-ingredients', data, layout, plyConfig);
 });
 
 Plotly.d3.text(file('ply_correlation_ingredients.csv'), text => {
@@ -104,5 +104,41 @@ Plotly.d3.text(file('ply_correlation_ingredients.csv'), text => {
         }
     };
 
-    Plotly.newPlot('correlation_ingredients', data, layout, plyConfig);
+    Plotly.newPlot('correlation-ingredients', data, layout, plyConfig);
+});
+
+
+Plotly.d3.csv(file('ply_correlation_sugars_fat.csv'), (err, rows) => {
+
+    rows = rows.slice(0, 2000);
+
+    const data = [{
+        x: rows.map(r => parseFloat(r.sugars_100g)),
+        y: rows.map(r => parseFloat(r.fat_100g)),
+        marker: { color: 'rgb(232, 2, 0)', size: 2 },
+        mode: 'markers',
+        type: 'scatter',
+        hoverinfo: ''
+    }];
+
+    const layout = {
+        title: {
+            text: 'Correlation between sugars and fat'
+        },
+        xaxis: {
+            title: {
+                text: 'Sugars per 100 grams'
+            }
+        },
+        yaxis: {
+            title: {
+                text: 'Fat per 100 grams'
+            }
+        },
+        autosize: false,
+        width: 500,
+        height: 500
+    };
+
+    Plotly.newPlot('correlation-sugars-fat', data, layout, plyConfig);
 });
