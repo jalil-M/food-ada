@@ -45,5 +45,35 @@ Plotly.d3.csv(file('ply_ingredients_tsne.csv'), (err, rows) => {
         yaxis: hiddenAxis
     };
 
-    Plotly.newPlot('products_ingredients', data, layout, plyConfig)
+    Plotly.newPlot('products_ingredients', data, layout, plyConfig);
+});
+
+
+Plotly.d3.csv(file('ply_top_ingredients_lists.csv'), (err, rows) => {
+
+    rows = rows.slice(0, 25);
+
+    function capitalizeFirst(s) {
+        if(s.length > 0)
+            return s[0].toUpperCase() + s.slice(1);
+        else
+            return s;
+    }
+
+    const data = [{
+        x: rows.map(r => r.ingredient).map(capitalizeFirst),
+        y: rows.map(r => parseFloat(r.frequency)),
+        type: 'bar'
+    }];
+
+    const layout = {
+        title: {
+            text: 'Top ' + rows.length + ' ingredients in products'
+        },
+        yaxis: {
+            tickformat: ',.0%'
+        }
+    };
+
+    Plotly.newPlot('top_ingredients', data, layout, plyConfig);
 });
