@@ -4,7 +4,11 @@ layout: default
 
 # Social status and product consumption
 
-```TODO```
+<div id="purchases-income"></div>
+
+<div id="purchases-age"></div>
+
+<div id="purchases-marital"></div>
 
 # Healthiness of food
 

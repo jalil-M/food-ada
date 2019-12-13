@@ -32,6 +32,58 @@ function fixed(layout) {
 
 // === Plots ===
 
+function stackedPurchases(filename, divId, title, xlabel) {
+    Plotly.d3.csv(file(filename), (err, rows) => {
+
+        const data = [];
+        rows.forEach(row => {
+            const keys = [], values = [];
+            Object.entries(row).forEach(([key, value]) => {
+                if(key !== 'product') {
+                    keys.push(key);
+                    values.push(value);
+                }
+            });
+            const trace = {
+                x: keys,
+                y: values,
+                name: row.product,
+                type: 'bar'
+            };
+            data.push(trace);
+        });
+
+        console.log(data);
+
+        const layout = {
+            barmode: 'stack',
+            title: {
+              text: title
+            },
+            xaxis: {
+                title: {
+                    text: xlabel
+                }
+            },
+            yaxis: {
+                title: {
+                    text: 'Purchases count per household'
+                }
+            }
+        };
+
+        Plotly.newPlot(divId, data, fixed(layout), plyConfig);
+    });
+}
+
+stackedPurchases('ply_purchases_income.csv', 'purchases-income', 'Amount of purchases of most common foods in terms of income', 'Household income');
+
+stackedPurchases('ply_purchases_age.csv', 'purchases-age', 'Amount of purchases of most common foods in terms of age', 'Household age');
+
+stackedPurchases('ply_purchases_marital.csv', 'purchases-marital', 'Amount of purchases of most common foods in terms of marital status', 'Household marital status');
+
+// ----
+
 Plotly.d3.csv(file('ply_correlation_sugars_fat.csv'), (err, rows) => {
 
     rows = rows.slice(0, 2000);
