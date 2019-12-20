@@ -29,20 +29,16 @@ The Dunnhumby Dataset consists of anonymized shopping data from 2,500 households
 	Milestone_3.ipynb
 	```
 
-2) Alternatively, open the notebook on nb-viewer or in its html format, in order to view our plotly visualizations :
+2) Alternatively, open the notebook on nb-viewer [here](lien) or in its html format below, in order to view our plotly visualizations :
 
 	```
 	Milestone_3.html
 	``` 
-or :
-	```
-	lien
-	```
 
 3) Go to the link for our datastory [here](https://jalil-M.github.io) or below :
 
 	```
-	jalil-M.github.io
+	https://jalil-M.github.io
 	```
 
 
@@ -54,9 +50,9 @@ or :
 - Identify patterns in food consumption depending on the social status
 
 ## Contributions
-- Abdeljalil Moussa : 
-- Florian Cassayre : 
-- Smail Ait Bouhsain : 
-- Ismail Nejjar : 
+- Abdeljalil Moussa : worked on part B, writing up the readme, writing up the datastory  
+- Florian Cassayre : worked on part B, built the data story
+- Smail Ait Bouhsain : worked on part A, part C,
+- Ismail Nejjar : worked on part A, part C, 
 
 ## Thank you for your attention !
