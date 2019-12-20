@@ -6,9 +6,10 @@ In order to do this, we use two datasets : Dunnhumby and OpenFoodFacts. The firs
 
 # Research questions
 - What are the main consumption habits of consumers?
-- Does social status affect dietary habits?
-- Can we deduce the social status of a person according to his consumption habits?
-- How can we suggest a better nutrition to a household given its social status and income?
+- What defines a social status ?
+- What defines a "healthy product" ?
+- What is the correlation between dangerous food aspects and nutrition grade ? 
+- Is there a correlation between social status and dietary habits?
 
 # Dataset
 We are going to use the **Open Food Facts Database** and **Dunnhumby Dataset**. 
@@ -24,6 +25,9 @@ The Dunnhumby Dataset consists of anonymized shopping data from 2,500 households
 - Continue exploring the data using other visualisation tools.
 - Identify patterns in food consumption depending on the social status
 
-# Questions for TAs
-- Is this new approach valid for the project?
+# Contributions
+- Abdeljalil Moussa : 1
+- Florian Cassayre : 2
+- Smail Ait Bouhsain : 3
+- Ismail Nejjar : zab
 
