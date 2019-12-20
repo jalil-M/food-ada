@@ -39,14 +39,14 @@ or :
 	lien
 	```
 
-3) Go to the link for our datastory :
+3) Go to the link for our datastory [here](jalil-M.github.io) or below :
 
 	```
 	jalil-M.github.io
 	```
 
 
-## A list of internal milestones up until project milestone 3
+## Previous (accomplished) list of internal milestones up until project milestone 3
 - Improve and deepen our analysis.
 - Consistency of the analysis of the new results after crossing the two datasets
 - Extract new informations on quality of food consumed by each social class.
@@ -54,9 +54,9 @@ or :
 - Identify patterns in food consumption depending on the social status
 
 ## Contributions
-- Abdeljalil Moussa : 1
-- Florian Cassayre : 2
-- Smail Ait Bouhsain : 3
-- Ismail Nejjar : zab
+- Abdeljalil Moussa : 
+- Florian Cassayre : 
+- Smail Ait Bouhsain : 
+- Ismail Nejjar : 
 
 ## Thank you for your attention !
