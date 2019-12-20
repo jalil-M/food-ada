@@ -42,7 +42,7 @@ The Dunnhumby Dataset consists of anonymized shopping data from 2,500 households
 	```
 
 
-## Previous (accomplished) list of internal milestones up until project milestone 3
+## Previous (accomplished) list of internal milestones up until milestone 3
 - Improve and deepen our analysis.
 - Consistency of the analysis of the new results after crossing the two datasets
 - Extract new informations on quality of food consumed by each social class.
