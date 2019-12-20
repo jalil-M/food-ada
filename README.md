@@ -39,7 +39,7 @@ or :
 	lien
 	```
 
-3) Go to the link for our datastory [here](jalil-M.github.io) or below :
+3) Go to the link for our datastory [here](https://www.jalil-M.github.io) or below :
 
 	```
 	jalil-M.github.io
