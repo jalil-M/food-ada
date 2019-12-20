@@ -29,7 +29,7 @@ The Dunnhumby Dataset consists of anonymized shopping data from 2,500 households
 	Milestone_3.ipynb
 	```
 
-2) Alternatively, open the notebook on nb-viewer [here](lien) or in its html format below, in order to view our plotly visualizations :
+2) Alternatively, open the notebook on nb-viewer [here](https://nbviewer.jupyter.org/github/jalil-M/food-ada/blob/master/Milestone_3.ipynb) or in its html format below, in order to view our plotly visualizations :
 
 	```
 	Milestone_3.html
