@@ -50,9 +50,9 @@ The Dunnhumby Dataset consists of anonymized shopping data from 2,500 households
 - Identify patterns in food consumption depending on the social status
 
 ## Contributions
-- Abdeljalil Moussa : worked on part B, writing up the readme, writing up the datastory  
-- Florian Cassayre : worked on part B, built the data story
-- Smail Ait Bouhsain : worked on part A, part C,
-- Ismail Nejjar : worked on part A, part C, 
+- Abdeljalil Moussa : worked on part B, writing up the readme, writing up the datastory and poster
+- Florian Cassayre : worked on part B, built the data story and worked on poster
+- Smail Ait Bouhsain : worked on part A, part C, worked on datastory, prepared the poster (speaker)
+- Ismail Nejjar : worked on part A, part C
 
 ## Thank you for your attention !
