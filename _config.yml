@@ -1,14 +1,14 @@
 # Setup
 title:        "Food Analytica"
 tagline:      "An interactive Datastory of social status and health"
-baseurl:      ""
+baseurl:      "jalil-M.github.io"
 locale:       "en"
 
 
 # About/contact
 author:
-  name:       ""
-  url:        ""
+  name:       "Abdeljalil Moussa"
+  url:        "jalil-M.github.io"
 
 # Gems
 gems:
