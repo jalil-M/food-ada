@@ -1,0 +1,18 @@
+# Setup
+title:        "Food Analytica"
+tagline:      "An interactive Datastory of social status and health"
+baseurl:      ""
+locale:       "en"
+
+
+# About/contact
+author:
+  name:       ""
+  url:        ""
+
+# Gems
+gems:
+  - jekyll-paginate
+
+#Others
+markdown: kramdown

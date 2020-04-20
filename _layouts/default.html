@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="{{ site.locale }}">
+  
+  {% include head.html %}
+
+  <body>
+    {% include page-header.html %}
+
+    <div id="navbar" class="hidden" style="width: 400px; margin-left: 20px;">
+      <div style="position: absolute">
+        <ul class="toc">
+          <li class="li-bold">
+            <a href="#overview"><span class="title">Overview</span></a>
+            <span class="chapter"></span>
+          </li>
+          <li class="li-bold">
+            <a href="#social-status-and-product-consumption"><span class="title">Social status and product consumption</span></a>
+            <span class="chapter">A</span>
+          </li>
+          <li>
+            <a href="#what-defines-social-status"><span class="title right">What defines social status?</span></a>
+            <span class="chapter">A.1</span>
+          </li>
+          <li>
+            <a href="#social-status-vs-food-retail"><span class="title right">Social Status VS Food Retail</span></a>
+            <span class="chapter">A.2</span>
+          </li>
+          <li>
+            <a href="#social-status-vs-food-types"><span class="title right">Social Status VS Food types</span></a>
+            <span class="chapter">A.3</span>
+          </li>
+          <li class="li-bold">
+            <a href="#healthiness-of-food"><span class="title">Healthiness of food</span></a>
+            <span class="chapter">B</span>
+          </li>
+          <li>
+            <a href="#whats-in-our-food"><span class="title right">What's in our food?</span></a>
+            <span class="chapter">B.1</span>
+          </li>
+          <li>
+            <a href="#how-relevant-is-the-nutritive-grade"><span class="title right">How relevant is the nutritive grade?</span></a>
+            <span class="chapter">B.2</span>
+          </li>
+          <li class="li-bold">
+            <a href="#impact-of-social-status-on-nutritive-health"><span class="title">Impact of social status on nutritive health</span></a>
+            <span class="chapter">C</span>
+          </li>
+          <li>
+            <a href="#how-healthy-does-each-class-eat"><span class="title right">How healthy does each class eat?</span></a>
+            <span class="chapter">C.1</span>
+          </li>
+          <li>
+            <a href="#social-class-vs-nutrition-grade"><span class="title right">Social class Vs. Nutrition grade</span></a>
+            <span class="chapter">C.2</span>
+          </li>
+          <li>
+            <a href="#social-class-vs-food-composition"><span class="title right">Social class Vs. Food composition</span></a>
+            <span class="chapter">C.3</span>
+          </li>
+          <li>
+            <a href="#correlation-between-social-status-and-nutrition-grade"><span class="title right">Correlation between Social status and nutrition grade</span></a>
+            <span class="chapter">C.4</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop + 400;
+
+
+
+      $(document).ready(function () {
+        $(window).scroll(function() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        });
+
+        function resize() {
+          if(window.innerWidth < 1600) {
+            $('#navbar').addClass('hidden');
+            $('#toc').removeClass('hidden');
+          } else {
+            $('#navbar').removeClass('hidden');
+            $('#toc').addClass('hidden');
+          }
+        }
+
+        resize(); // Initial call
+
+        $(window).resize(resize);
+      });
+
+
+
+    </script>
+
+    <section class="main-content">
+      
+      {{ content }}
+
+      {% include page-footer.html %}
+
+    </section>
+
+    <a id="button"></a>
+
+
+  </body>
+</html>
