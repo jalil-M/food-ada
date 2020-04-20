@@ -35,10 +35,10 @@ The Dunnhumby Dataset consists of anonymized shopping data from 2,500 households
 	Milestone_3.html
 	``` 
 
-3) Go to the link for our datastory [here](https://jalil-M.github.io) or below :
+3) Go to the link for our datastory [here](https://jalil-M.github.io/food-ada) or below :
 
 	```
-	https://jalil-M.github.io
+	https://jalil-M.github.io/food-ada
 	```
 
 
